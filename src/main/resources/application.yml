@@ -1,0 +1,7 @@
+server:
+  ssl:
+    key-alias: capstone-https
+    key-store: classpath:capstoneemployee.jks
+    key-store-type: JKS
+    key-store-password: shreeom
+  
