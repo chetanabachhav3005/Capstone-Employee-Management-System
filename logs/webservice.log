@@ -904,3 +904,30 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2023-04-25 15:26:31,029 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-25 15:26:31,036 INFO c.z.h.HikariDataSource[SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2023-04-25 15:26:31,116 INFO c.z.h.HikariDataSource[SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-25 15:42:04,949 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(28)-127.0.0.1] Application shutdown requested.
+2023-04-25 15:42:11,436 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(28)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-25 15:42:11,452 INFO o.a.c.c.StandardService[RMI TCP Connection(28)-127.0.0.1] Stopping service [Tomcat]
+2023-04-25 15:42:13,216 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(28)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-25 15:42:13,493 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(28)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-25 15:42:14,337 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(28)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25 15:42:15,028 INFO c.z.h.HikariDataSource[RMI TCP Connection(28)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-25 15:42:16,643 INFO c.z.h.HikariDataSource[RMI TCP Connection(28)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-25 15:42:41,328 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 on DESKTOP-S9CLLNI with PID 1360 (C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project\bin\main started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-25 15:42:41,345 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-25 15:42:41,378 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-25 15:42:50,405 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25 15:42:51,251 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 708 ms. Found 1 JPA repository interfaces.
+2023-04-25 15:42:56,646 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8181 (https)
+2023-04-25 15:42:56,744 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-25 15:42:56,750 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-25 15:42:56,754 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-25 15:42:58,208 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-25 15:42:58,216 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 15920 ms
+2023-04-25 15:42:59,663 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25 15:43:00,435 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-25 15:43:04,984 INFO o.h.a.c.Version[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-25 15:43:06,760 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-25 15:43:10,349 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-25 15:43:10,665 INFO o.h.d.Dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-25 15:43:14,067 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25 15:43:14,154 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
