@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: hdfc_ems-k8s
+      app: hdfc-ems-k8s
   replicas: 3 # Number of replicas that will be created for this deployment
   template:
     metadata:
       labels:
-        app: hdfc_ems-k8s
+        app: hdfc-ems-k8s
     spec:
       containers:
-        - name: hdfc_ems-k8s
+        - name: hdfc-ems-k8s
           image: chetanabachhav/capstone-employee-project # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
@@ -25,10 +25,10 @@ spec:
 apiVersion: v1 # Kubernetes API version
 kind: Service # Kubernetes resource kind we are creating
 metadata: # Metadata of the resource kind we are creating
-  name: hdfc_ems-k8ssvc
+  name: hdfc-ems-k8ssvc
 spec:
   selector:
-    app: hdfc_ems-k8s
+    app: hdfc-ems-k8s
   ports:
     - protocol: "TCP"
       port: 8181 # The port that the service is running on in the cluster
