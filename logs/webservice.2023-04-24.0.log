@@ -1,0 +1,813 @@
+2023-04-24 09:22:32,213 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 09:22:32,493 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 32832 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-24 09:22:32,495 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 09:22:34,528 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 09:22:34,608 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+2023-04-24 09:22:36,105 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-24 09:22:36,123 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:22:36,128 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 09:22:36,128 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 09:22:36,358 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 09:22:36,358 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 3749 ms
+2023-04-24 09:22:36,962 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 09:22:37,124 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 09:22:37,818 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 09:22:40,014 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d132bb6
+2023-04-24 09:22:40,017 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 09:22:41,790 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 09:22:43,737 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 09:22:43,771 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:22:44,669 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 09:22:45,344 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:22:45,500 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-24 09:22:45,592 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-24 09:22:45,609 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 14.537 seconds (process running for 18.259)
+2023-04-24 09:28:44,841 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 09:28:45,145 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-24 09:28:45,148 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 2 ms
+2023-04-24 09:28:46,633 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-24 09:28:53,416 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet][https-jsse-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.security.InvalidKeyException: Invalid AES key length: 20 bytes] with root cause
+java.security.InvalidKeyException: Invalid AES key length: 20 bytes
+	at java.base/com.sun.crypto.provider.AESCrypt.init(AESCrypt.java:90)
+	at java.base/com.sun.crypto.provider.ElectronicCodeBook.init(ElectronicCodeBook.java:97)
+	at java.base/com.sun.crypto.provider.CipherCore.init(CipherCore.java:482)
+	at java.base/com.sun.crypto.provider.CipherCore.init(CipherCore.java:400)
+	at java.base/com.sun.crypto.provider.AESCipher.engineInit(AESCipher.java:306)
+	at java.base/javax.crypto.Cipher.implInit(Cipher.java:867)
+	at java.base/javax.crypto.Cipher.chooseProvider(Cipher.java:929)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1299)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1236)
+	at com.hdfc.capstone.employee.utils.AESUtils.encrypt(AESUtils.java:17)
+	at com.hdfc.capstone.employee.service.EmployeeService.toDTO(EmployeeService.java:38)
+	at com.hdfc.capstone.employee.service.EmployeeService.getEmployee(EmployeeService.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.hdfc.capstone.employee.service.EmployeeService$$SpringCGLIB$$0.getEmployee(<generated>)
+	at com.hdfc.capstone.employee.controller.EmployeeController.getEmployeebyId(EmployeeController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-24 09:32:37,302 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(12)-127.0.0.1] Application shutdown requested.
+2023-04-24 09:32:37,403 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(12)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:32:37,403 INFO o.a.c.c.StandardService[RMI TCP Connection(12)-127.0.0.1] Stopping service [Tomcat]
+2023-04-24 09:32:37,443 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(12)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-24 09:32:37,507 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(12)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:32:37,514 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(12)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:32:37,533 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(12)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:32:37,559 INFO c.z.h.HikariDataSource[RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-24 09:32:37,782 INFO c.z.h.HikariDataSource[RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-24 09:32:43,064 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 09:32:43,097 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 11760 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-24 09:32:43,098 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 09:32:44,631 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 09:32:44,731 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2023-04-24 09:32:45,823 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-24 09:32:45,836 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:32:45,840 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 09:32:45,840 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 09:32:46,050 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 09:32:46,050 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 2896 ms
+2023-04-24 09:32:46,329 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 09:32:46,412 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 09:32:47,025 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 09:32:47,781 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5273143e
+2023-04-24 09:32:47,786 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 09:32:48,047 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 09:32:49,255 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 09:32:49,271 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:32:49,985 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 09:32:50,522 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:32:50,632 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-24 09:32:50,684 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-24 09:32:50,695 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 8.429 seconds (process running for 10.225)
+2023-04-24 09:32:59,874 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 09:32:59,875 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-24 09:32:59,876 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 1 ms
+2023-04-24 09:32:59,920 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-24 09:33:00,169 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet][https-jsse-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.security.InvalidKeyException: Invalid AES key length: 5 bytes] with root cause
+java.security.InvalidKeyException: Invalid AES key length: 5 bytes
+	at java.base/com.sun.crypto.provider.AESCrypt.init(AESCrypt.java:90)
+	at java.base/com.sun.crypto.provider.ElectronicCodeBook.init(ElectronicCodeBook.java:97)
+	at java.base/com.sun.crypto.provider.CipherCore.init(CipherCore.java:482)
+	at java.base/com.sun.crypto.provider.CipherCore.init(CipherCore.java:400)
+	at java.base/com.sun.crypto.provider.AESCipher.engineInit(AESCipher.java:306)
+	at java.base/javax.crypto.Cipher.implInit(Cipher.java:867)
+	at java.base/javax.crypto.Cipher.chooseProvider(Cipher.java:929)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1299)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1236)
+	at com.hdfc.capstone.employee.utils.AESUtils.encrypt(AESUtils.java:17)
+	at com.hdfc.capstone.employee.service.EmployeeService.toDTO(EmployeeService.java:38)
+	at com.hdfc.capstone.employee.service.EmployeeService.getEmployee(EmployeeService.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.hdfc.capstone.employee.service.EmployeeService$$SpringCGLIB$$0.getEmployee(<generated>)
+	at com.hdfc.capstone.employee.controller.EmployeeController.getEmployeebyId(EmployeeController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-24 09:34:44,546 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(4)-127.0.0.1] Application shutdown requested.
+2023-04-24 09:34:44,561 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(4)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:34:44,561 INFO o.a.c.c.StandardService[RMI TCP Connection(4)-127.0.0.1] Stopping service [Tomcat]
+2023-04-24 09:34:44,563 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(4)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-24 09:34:44,568 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(4)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:34:44,570 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(4)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:34:44,572 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(4)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:34:44,574 INFO c.z.h.HikariDataSource[RMI TCP Connection(4)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-24 09:34:44,601 INFO c.z.h.HikariDataSource[RMI TCP Connection(4)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-24 09:34:47,575 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 09:34:47,623 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 32180 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-24 09:34:47,624 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 09:34:48,190 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 09:34:48,245 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2023-04-24 09:34:48,697 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-24 09:34:48,720 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:34:48,724 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 09:34:48,725 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 09:34:48,835 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 09:34:48,835 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 1164 ms
+2023-04-24 09:34:48,966 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 09:34:49,026 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 09:34:49,298 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 09:34:50,444 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6de610c6
+2023-04-24 09:34:50,448 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 09:34:50,563 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 09:34:52,517 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 09:34:52,533 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:34:53,013 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 09:34:53,309 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:34:53,373 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-24 09:34:53,413 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-24 09:34:53,421 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 6.222 seconds (process running for 7.14)
+2023-04-24 09:34:58,663 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 09:34:58,663 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-24 09:34:58,664 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 1 ms
+2023-04-24 09:34:58,736 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-24 09:34:59,032 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet][https-jsse-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.security.InvalidKeyException: Invalid AES key length: 35 bytes] with root cause
+java.security.InvalidKeyException: Invalid AES key length: 35 bytes
+	at java.base/com.sun.crypto.provider.AESCrypt.init(AESCrypt.java:90)
+	at java.base/com.sun.crypto.provider.ElectronicCodeBook.init(ElectronicCodeBook.java:97)
+	at java.base/com.sun.crypto.provider.CipherCore.init(CipherCore.java:482)
+	at java.base/com.sun.crypto.provider.CipherCore.init(CipherCore.java:400)
+	at java.base/com.sun.crypto.provider.AESCipher.engineInit(AESCipher.java:306)
+	at java.base/javax.crypto.Cipher.implInit(Cipher.java:867)
+	at java.base/javax.crypto.Cipher.chooseProvider(Cipher.java:929)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1299)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1236)
+	at com.hdfc.capstone.employee.utils.AESUtils.encrypt(AESUtils.java:17)
+	at com.hdfc.capstone.employee.service.EmployeeService.toDTO(EmployeeService.java:38)
+	at com.hdfc.capstone.employee.service.EmployeeService.getEmployee(EmployeeService.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.hdfc.capstone.employee.service.EmployeeService$$SpringCGLIB$$0.getEmployee(<generated>)
+	at com.hdfc.capstone.employee.controller.EmployeeController.getEmployeebyId(EmployeeController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-24 09:35:58,727 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(3)-127.0.0.1] Application shutdown requested.
+2023-04-24 09:35:58,742 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(3)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:35:58,742 INFO o.a.c.c.StandardService[RMI TCP Connection(3)-127.0.0.1] Stopping service [Tomcat]
+2023-04-24 09:35:58,743 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(3)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-24 09:35:58,748 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(3)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:35:58,749 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(3)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:35:58,752 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(3)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:35:58,754 INFO c.z.h.HikariDataSource[RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-24 09:35:58,761 INFO c.z.h.HikariDataSource[RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-24 09:36:02,391 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 09:36:02,407 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 23800 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-24 09:36:02,408 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 09:36:02,999 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 09:36:03,055 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-04-24 09:36:03,500 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-24 09:36:03,510 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:36:03,514 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 09:36:03,514 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 09:36:03,767 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 09:36:03,767 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 1308 ms
+2023-04-24 09:36:03,896 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 09:36:03,944 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 09:36:04,218 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 09:36:04,552 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@334b392d
+2023-04-24 09:36:04,555 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 09:36:04,726 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 09:36:05,945 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 09:36:05,963 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 09:36:06,640 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 09:36:06,971 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-24 09:36:07,034 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-24 09:36:07,097 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-24 09:36:07,106 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 5.22 seconds (process running for 6.373)
+2023-04-24 09:36:12,176 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 09:36:12,177 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-24 09:36:12,178 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 1 ms
+2023-04-24 09:36:12,237 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-24 10:06:12,402 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s401ms676µs500ns).
+2023-04-24 10:06:56,576 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s118ms155µs200ns).
+2023-04-24 10:09:52,570 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s967ms355µs700ns).
+2023-04-24 11:09:47,293 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s757ms904µs300ns).
+2023-04-24 11:10:38,477 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s183ms414µs).
+2023-04-24 16:56:02,118 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 16:56:02,246 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 7368 (C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project\bin\main started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-24 16:56:02,250 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:56:04,074 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:56:04,171 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-04-24 16:56:05,307 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8181 (https)
+2023-04-24 16:56:05,338 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 16:56:05,348 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 16:56:05,349 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 16:56:05,662 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:56:05,662 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 3120 ms
+2023-04-24 16:56:05,971 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:56:06,089 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 16:56:06,897 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 16:56:09,055 ERROR c.z.h.p.HikariPool[main] HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
+2023-04-24 16:56:09,070 WARN o.h.e.j.e.i.JdbcEnvironmentInitiator[main] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
+2023-04-24 16:56:09,093 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-24 16:56:09,097 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-24 16:56:09,105 INFO o.a.c.c.StandardService[main] Stopping service [Tomcat]
+2023-04-24 16:56:09,134 INFO o.s.b.a.l.ConditionEvaluationReportLogger[main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-24 16:56:09,170 ERROR o.s.b.SpringApplication[main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	... 31 common frames omitted
+2023-04-24 16:57:10,426 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 16:57:10,570 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 12104 (C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project\bin\main started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-24 16:57:10,572 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:57:12,259 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:57:12,370 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+2023-04-24 16:57:13,838 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8181 (https)
+2023-04-24 16:57:13,877 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 16:57:13,896 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 16:57:13,897 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 16:57:14,350 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:57:14,351 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 3675 ms
+2023-04-24 16:57:14,623 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:57:14,812 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 16:57:15,793 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 16:57:18,351 ERROR c.z.h.p.HikariPool[main] HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'capstone'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
+2023-04-24 16:57:18,357 WARN o.h.e.j.e.i.JdbcEnvironmentInitiator[main] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLSyntaxErrorException: Unknown database 'capstone'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
+2023-04-24 16:57:18,367 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-24 16:57:18,369 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-24 16:57:18,378 INFO o.a.c.c.StandardService[main] Stopping service [Tomcat]
+2023-04-24 16:57:18,415 INFO o.s.b.a.l.ConditionEvaluationReportLogger[main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-24 16:57:18,464 ERROR o.s.b.SpringApplication[main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	... 31 common frames omitted
+2023-04-24 16:58:13,491 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 16:58:13,604 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 13176 (C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project\bin\main started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-24 16:58:13,609 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 16:58:14,883 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 16:58:14,987 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2023-04-24 16:58:16,109 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8181 (https)
+2023-04-24 16:58:16,136 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 16:58:16,144 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 16:58:16,144 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 16:58:16,436 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 16:58:16,437 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 2703 ms
+2023-04-24 16:58:16,722 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 16:58:16,834 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 16:58:17,486 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 16:58:18,375 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@986b619
+2023-04-24 16:58:18,380 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 16:58:19,781 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 16:58:26,251 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 16:58:26,301 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 16:58:29,051 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 16:58:30,139 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 16:58:30,568 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8181], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/HPUSER/Downloads/capstone-employee-project/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-24 16:58:30,813 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8181 (https) with context path ''
+2023-04-24 16:58:30,832 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 18.029 seconds (process running for 20.274)
+2023-04-24 17:01:52,801 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(7)-127.0.0.1] Application shutdown requested.
+2023-04-24 17:01:54,646 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(7)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:01:54,653 INFO o.a.c.c.StandardService[RMI TCP Connection(7)-127.0.0.1] Stopping service [Tomcat]
+2023-04-24 17:01:55,497 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(7)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:01:55,581 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(7)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:01:55,760 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(7)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:01:56,040 INFO c.z.h.HikariDataSource[RMI TCP Connection(7)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:01:56,337 INFO c.z.h.HikariDataSource[RMI TCP Connection(7)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-24 17:02:09,656 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 17:02:09,884 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 6260 (C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project\bin\main started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-24 17:02:09,888 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:02:11,957 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:02:12,092 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+2023-04-24 17:02:13,951 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8181 (https)
+2023-04-24 17:02:14,054 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:02:14,068 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-24 17:02:14,068 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-24 17:02:14,820 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-24 17:02:14,825 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 4809 ms
+2023-04-24 17:02:16,189 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:02:17,110 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 17:02:19,947 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 17:02:21,619 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@186481d4
+2023-04-24 17:02:21,627 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 17:02:21,941 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 17:02:30,883 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:02:31,009 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:02:34,703 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:02:37,090 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:02:37,612 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8181], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/HPUSER/Downloads/capstone-employee-project/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-24 17:02:37,892 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8181 (https) with context path ''
+2023-04-24 17:02:37,912 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 29.201 seconds (process running for 34.002)
+2023-04-24 17:04:35,587 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8181-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 17:04:35,588 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8181-exec-3] Initializing Servlet 'dispatcherServlet'
+2023-04-24 17:04:35,592 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8181-exec-3] Completed initialization in 3 ms
+2023-04-24 17:04:35,697 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8181-exec-3] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-24 17:22:21,308 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils[main] Could not detect default configuration classes for test class [com.hdfc.capstone.employee.CapstoneEmployeeProjectApplicationTests]: CapstoneEmployeeProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-24 17:22:22,170 INFO o.s.b.t.c.SpringBootTestContextBootstrapper[main] Found @SpringBootConfiguration com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication for test class com.hdfc.capstone.employee.CapstoneEmployeeProjectApplicationTests
+2023-04-24 17:22:28,735 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 17:22:29,152 INFO c.h.c.e.CapstoneEmployeeProjectApplicationTests[main] Starting CapstoneEmployeeProjectApplicationTests using Java 17.0.6 with PID 7988 (started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-24 17:22:29,158 INFO c.h.c.e.CapstoneEmployeeProjectApplicationTests[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-24 17:22:39,197 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-24 17:22:39,593 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 324 ms. Found 1 JPA repository interfaces.
+2023-04-24 17:22:44,754 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-24 17:22:45,846 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-24 17:22:54,795 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-24 17:22:58,692 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5464b97c
+2023-04-24 17:22:58,712 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-24 17:23:01,568 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-24 17:23:08,361 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-24 17:23:08,411 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:23:11,991 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-24 17:23:16,120 INFO c.h.c.e.CapstoneEmployeeProjectApplicationTests[main] Started CapstoneEmployeeProjectApplicationTests in 51.853 seconds (process running for 66.206)
+2023-04-24 17:23:18,675 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils[main] Could not detect default configuration classes for test class [com.hdfc.capstone.employee.test.EmployeeTest]: EmployeeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-24 17:23:18,695 INFO o.s.b.t.c.SpringBootTestContextBootstrapper[main] Found @SpringBootConfiguration com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication for test class com.hdfc.capstone.employee.test.EmployeeTest
+2023-04-24 17:23:20,930 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:23:20,935 INFO c.z.h.HikariDataSource[SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:23:21,050 INFO c.z.h.HikariDataSource[SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-24 17:40:16,359 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(42)-127.0.0.1] Application shutdown requested.
+2023-04-24 17:40:25,200 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(42)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:40:25,202 INFO o.a.c.c.StandardService[RMI TCP Connection(42)-127.0.0.1] Stopping service [Tomcat]
+2023-04-24 17:40:25,306 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(42)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-24 17:40:27,131 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(42)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:40:28,208 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(42)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-24 17:40:28,585 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(42)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:40:29,069 INFO c.z.h.HikariDataSource[RMI TCP Connection(42)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-24 17:40:30,156 INFO c.z.h.HikariDataSource[RMI TCP Connection(42)-127.0.0.1] HikariPool-1 - Shutdown completed.
