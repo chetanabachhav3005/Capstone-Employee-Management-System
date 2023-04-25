@@ -2,8 +2,11 @@ package com.hdfc.capstone.employee.entity;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+
 
 @Entity
 public class Employee {

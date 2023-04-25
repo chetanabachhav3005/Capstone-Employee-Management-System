@@ -2,6 +2,7 @@ package com.hdfc.capstone.employee.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hdfc.capstone.employee.dto.EmployeeDTO;
 import com.hdfc.capstone.employee.entity.Employee;
@@ -9,7 +10,6 @@ import com.hdfc.capstone.employee.exception.InvalidEmployeeIdException;
 import com.hdfc.capstone.employee.repo.EmployeeRepository;
 import com.hdfc.capstone.employee.utils.AESUtils;
 
-import jakarta.transaction.Transactional;
 
 @Service
 public class EmployeeService implements IEmployeeService{
