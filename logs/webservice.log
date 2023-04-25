@@ -931,3 +931,7 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2023-04-25 15:43:10,665 INFO o.h.d.Dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
 2023-04-25 15:43:14,067 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-04-25 15:43:14,154 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25 15:43:16,545 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-25 15:43:18,209 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8181"]
+2023-04-25 15:43:18,976 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8181], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/HPUSER/Downloads/capstone-employee-project/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-25 15:43:19,255 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8181 (https) with context path ''
