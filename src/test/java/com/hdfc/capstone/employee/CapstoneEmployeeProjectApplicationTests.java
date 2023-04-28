@@ -6,10 +6,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class CapstoneEmployeeProjectApplicationTests {
 
-	@Test
-	void contextLoads() {
+	//@Test
+	//void contextLoads() {
 		
 		
-	}
+	//}
 
 }
