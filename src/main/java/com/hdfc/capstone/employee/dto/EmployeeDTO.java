@@ -1,7 +1,5 @@
 package com.hdfc.capstone.employee.dto;
 
-import java.time.LocalDate;
-
 public class EmployeeDTO {
 	
 	private long employeeId;

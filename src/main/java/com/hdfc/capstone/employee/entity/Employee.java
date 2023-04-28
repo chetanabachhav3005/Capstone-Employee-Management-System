@@ -1,22 +1,18 @@
 package com.hdfc.capstone.employee.entity;
 
 import java.time.LocalDate;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
-
-
 
 @Entity
 public class Employee {
 
 	@Id
-	
 	private long employeeId;
 	private String employeeName;
 	private LocalDate dateOfBirth;
 	
+
 	
 	public Employee() {
 		super();

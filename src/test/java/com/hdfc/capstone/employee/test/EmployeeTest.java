@@ -16,29 +16,18 @@ import com.hdfc.capstone.employee.repo.EmployeeRepository;
 @SpringBootTest
 public class EmployeeTest {
 
-	@Autowired 
+	@Autowired
 	EmployeeRepository repo;
+
 	@Test
-     void testEmployee() throws InvalidEmployeeIdException{
-	
-//		   Employee employee1=repo.findByEmployeeId(1111);
-//		    Employee employee2=repo.findByEmployeeId(56);
-//		    LocalDate date=LocalDate.of(1993, 05, 01);
-//		    assertEquals("Priya Arora",employee1.getEmployeeName());
-//		    assertEquals(date,employee1.getDateOfBirth());
-//		    assertEquals(null,employee2);
-//		    
-//		     
-//		    
-		    
-		    
-		    
-		    Employee emp=repo.findByEmployeeId(101);
-		    assertEquals("chetu",emp.getEmployeeName());
-		    
-		    
-		    
-		}
+	void testEmployee() throws InvalidEmployeeIdException {
+
+		Employee emp = repo.findByEmployeeId(1001);
+		assertEquals("Chetana Bachhav", emp.getEmployeeName());
+
+		Employee emp1 = repo.findByEmployeeId(3005);
+		assertEquals(LocalDate.of(2000, 03, 05), emp1.getDateOfBirth());
 
 	}
 
+}

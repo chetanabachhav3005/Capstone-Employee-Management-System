@@ -1,0 +1,29 @@
+2023-04-27 09:54:08,824 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-27 09:54:08,824 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 on DESKTOP-S9CLLNI with PID 9420 (C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project\bin\main started by HPUSER in C:\Users\HPUSER\Downloads\capstone-employee-project\capstone-employee-project)
+2023-04-27 09:54:08,942 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 09:54:15,157 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 09:54:15,511 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 320 ms. Found 1 JPA repository interfaces.
+2023-04-27 09:54:21,592 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8952 (https)
+2023-04-27 09:54:21,730 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8952"]
+2023-04-27 09:54:21,732 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 09:54:21,733 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-27 09:54:23,298 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 09:54:23,299 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 13587 ms
+2023-04-27 09:54:25,140 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 09:54:26,357 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-27 09:54:28,925 INFO o.h.a.c.Version[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-27 09:54:30,407 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 09:54:37,739 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 09:54:38,204 INFO o.h.d.Dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-27 09:54:52,527 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 09:54:52,791 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 09:54:57,640 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 09:55:00,884 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8952"]
+2023-04-27 09:55:01,804 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8952], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/HPUSER/Downloads/capstone-employee-project/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 09:55:02,227 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8952 (https) with context path ''
+2023-04-27 09:55:02,259 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 58.316 seconds (JVM running for 76.63)
+2023-04-27 09:57:05,398 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8952-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 09:57:05,403 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8952-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-27 09:57:05,408 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8952-exec-6] Completed initialization in 4 ms
+2023-04-27 16:22:54,911 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s814ms252µs100ns).
+2023-04-27 16:24:02,630 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s706ms952µs300ns).
