@@ -91,3 +91,12 @@
 2023-04-28 11:25:43,235 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8953-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-04-28 11:25:43,236 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8953-exec-4] Initializing Servlet 'dispatcherServlet'
 2023-04-28 11:25:43,238 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8953-exec-4] Completed initialization in 2 ms
+2023-04-28 11:35:51,927 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(17)-127.0.0.1] Application shutdown requested.
+2023-04-28 11:35:53,344 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(17)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8953"]
+2023-04-28 11:35:53,347 INFO o.a.c.c.StandardService[RMI TCP Connection(17)-127.0.0.1] Stopping service [Tomcat]
+2023-04-28 11:35:53,435 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(17)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-28 11:35:53,632 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(17)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8953"]
+2023-04-28 11:35:53,663 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(17)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8953"]
+2023-04-28 11:35:53,785 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(17)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 11:35:53,930 INFO c.z.h.HikariDataSource[RMI TCP Connection(17)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-28 11:35:54,263 INFO c.z.h.HikariDataSource[RMI TCP Connection(17)-127.0.0.1] HikariPool-1 - Shutdown completed.
